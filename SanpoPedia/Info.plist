@@ -6,6 +6,8 @@
 	<string>散歩ペディア</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>周辺のスポット情報を表示するために位置情報を使用します</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>最適な広告を表示するために使用します</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9404799280370656~9566173489</string>
 	<key>SKAdNetworkItems</key>

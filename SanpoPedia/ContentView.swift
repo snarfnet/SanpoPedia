@@ -78,6 +78,14 @@ struct ContentView: View {
                 Task { await viewModel.loadSpots(location: loc) }
             }
         }
+        .task {
+            // Fallback: if no location after 8 seconds, use Tokyo Station
+            try? await Task.sleep(nanoseconds: 8_000_000_000)
+            if viewModel.spots.isEmpty && !viewModel.isLoading {
+                let fallback = CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
+                await viewModel.loadSpots(location: fallback)
+            }
+        }
     }
 }
 
