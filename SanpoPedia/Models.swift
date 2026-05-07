@@ -95,7 +95,7 @@ enum SpotCategory: String, CaseIterable, Identifiable {
         case .incident: return "exclamationmark.triangle"
         case .architecture: return "building.columns"
         case .sports: return "sportscourt"
-        case .legend: return "ghost"
+        case .legend: return "sparkles"
         case .filming: return "film"
         case .other: return "mappin"
         }
@@ -103,19 +103,19 @@ enum SpotCategory: String, CaseIterable, Identifiable {
 
     var color: String {
         switch self {
-        case .play: return "4CAF50"
-        case .useful: return "2196F3"
-        case .eat: return "FF9800"
-        case .history: return "795548"
-        case .trivia: return "FFC107"
-        case .nature: return "66BB6A"
-        case .culture: return "9C27B0"
-        case .incident: return "F44336"
-        case .architecture: return "607D8B"
-        case .sports: return "00BCD4"
-        case .legend: return "673AB7"
-        case .filming: return "E91E63"
-        case .other: return "9E9E9E"
+        case .play: return "2F8F5B"
+        case .useful: return "3D95B8"
+        case .eat: return "D9783A"
+        case .history: return "8A6848"
+        case .trivia: return "C89D2D"
+        case .nature: return "126A3F"
+        case .culture: return "7D5B9A"
+        case .incident: return "C94D46"
+        case .architecture: return "586F78"
+        case .sports: return "268C98"
+        case .legend: return "6F6AB2"
+        case .filming: return "C95F78"
+        case .other: return "7B837D"
         }
     }
 }
