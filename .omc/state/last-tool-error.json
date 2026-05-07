@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"gh workflow run copy-secrets -R snarfnet/FutsunoNews -f target_repo=snarfnet/SanpoPedia\",\"description\":\"Copy secrets from FutsunoNews to SanpoPedia\"}",
+  "error": "Exit code 1\ncould not find any workflows named copy-secrets",
+  "timestamp": "2026-05-07T01:43:32.651Z",
+  "retry_count": 1
+}

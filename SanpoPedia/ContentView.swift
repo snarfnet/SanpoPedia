@@ -57,7 +57,7 @@ struct ContentView: View {
                 }
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
-                        Task { await viewModel.refresh(location: locationManager.location) }
+                        Task { await viewModel.refresh(location: locationManager.location?.coordinate) }
                     } label: {
                         Image(systemName: "arrow.clockwise")
                     }
@@ -69,7 +69,7 @@ struct ContentView: View {
             locationManager.requestPermission()
         }
         .onChange(of: locationManager.location) { _, newLoc in
-            if let loc = newLoc, viewModel.spots.isEmpty {
+            if let loc = newLoc?.coordinate, viewModel.spots.isEmpty {
                 Task { await viewModel.loadSpots(location: loc) }
             }
         }
